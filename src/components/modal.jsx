@@ -40,13 +40,13 @@ const Modal = ({ modalopen, setmodalopen }) => {
           <div className="flex  flex-col justify-center items-center">
             <img
               className="size-70 rounded-2xl"
-              src="./loveyou.gif"
+              src={`${import.meta.env.BASE_URL}loveyou.gif`}
               alt=""
               srcset=""
             />
           </div>
           <div className="flex flex-col gap-0 justify-center items-center select-none">
-            <h1 className="text-3xl">Love you raa Chitii Bangaram</h1>
+            {/* <h1 className="text-3xl">Love you raa Chitii Bangaram</h1> */}
             <h1 className="text-3xl">&#129655;&#x1FAC2;&#x2728;&#128536;</h1>
           </div>
           <div className="flex flex-col items-center gap-2">
@@ -57,7 +57,7 @@ const Modal = ({ modalopen, setmodalopen }) => {
             />
 
             <span className="text-2xl text-red-500 select-none flex items-center gap-2">
-              love you x {lovecount}
+              Love you x {lovecount}
               <span
                 className={`inline-block transition-transform duration-300 ${
                   sparkleBounce ? "scale-150" : "scale-100"

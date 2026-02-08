@@ -18,13 +18,13 @@ const Mainbox = () => {
         </div>
         <div className="flex flex-col select-none">
           <h1 className="text-center w-full  text-4xl text-pink-600 font-semibold">
-            Visleksha
+            {/* Visleksha */}
             <Heart className="w-full size-20 fill-pink-600 " />
           </h1>
           <div className="flex justify-center">
             <img
               className="rounded-3xl border-gray-400 border-2"
-              src="./proposal.gif"
+              src={`${import.meta.env.BASE_URL}proposal.gif`}
               alt=""
               srcSet=""
             />
